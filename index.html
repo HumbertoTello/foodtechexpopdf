@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="image-container"><img src="public/images/FOODTECHVIRTUAL-2-01.jpg" alt=""></div>
   <div class="image-container"><img src="public/images/FOODTECHVIRTUAL-2-02.jpg" alt=""></div>
@@ -20,5 +22,18 @@
   <div class="image-container"><img src="public/images/FOODTECHVIRTUAL-2-11.jpg" alt=""></div>
   <div class="image-container"><img src="public/images/FOODTECHVIRTUAL-2-12.jpg" alt=""></div>
   <div class="image-container"><img src="public/images/FOODTECHVIRTUAL-2-13.jpg" alt=""></div>
+
+  <script>
+    const images = document.querySelectorAll("img")
+    for (image of images) {
+      image.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        return false
+      })
+    }
+    
+    console.log(document.querySelectorAll('img'))
+  </script>
 </body>
+
 </html>
